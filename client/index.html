@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Paul Mun</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="angular/angular.js" charset="utf-8"></script>
+	<script src="angular-route/angular-route.js" charset="utf-8"></script>
+	<script src="angular-animate/angular-animate.js"></script>
+</head>
+<body ng-app="main" ng-controller="mainController">
+	<div class="header">
+		<a href="#/" id={{logoClass}}>
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 			viewBox="0 0 110.5 69.2" enable-background="new 0 0 110.5 69.2" xml:space="preserve">
+				<g id="Logo1">
+					<circle class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" cx="27.7" cy="27.7" r="23.7"/>
+					<line class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="4" y1="27.7" x2="4" y2="69.2"/>
+					<line class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="51.3" y1="13.1" x2="51.3" y2="54.4"/>
+					<path class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" d="M51.3,15.8C51.3,9.3,56.6,4,63.2,4S75,9.3,75,15.8"
+						/>
+					<line class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" x1="75" y1="13.9" x2="75" y2="34.3"/>
+					<path class={{logoClass}} fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" d="M75,15.8C75,9.3,80.3,4,86.8,4
+						c6.5,0,11.8,5.3,11.8,11.8v23.6c0,6.5,5.3,11.8,11.8,11.8"/>
+				</g>
+			</svg>			
+		</a>
+		<div id="headerText">
+			<p id="name">Paul Mun</p>
+			<p>Product Manager</p>
+			<p>Full-Stack Web Dev</p>
+		</div>
+		<a id="menu" href="">Menu</a>
+		<a href="" id={{menuClass}} ng-click="menuExpand()">
+			<p id="closeMenu" ng-hide="showMenu">close</p>
+			<span id="m1"></span>
+			<span id="m2"></span>
+			<span id="m3"></span>
+		</a>
+	</div>
+	<div id="menuShow" class="fade" ng-hide="showMenu">
+		<ul>
+			<li><a href="#/portfolio">My Work</a></li>
+			<li><a href="#/blog">Blog</a></li>
+			<li><a href="#/resume">Resume</a></li>
+			<li><a href="#/about">About</a></li>
+			<li><a href="#/contact">Get in Touch</a></li>
+		</ul>
+		<ul id="social">
+			<li><a href=""><img src="assets/img/social/gitHub.png" alt=""></a></li>
+			<li><a href=""><img src="assets/img/social/linkedIn.png" alt=""></a></li>
+		</ul>
+	</div>
+	<div ng-view></div>
+	<script src="assets/js/app.js" charset="utf-8"></script>
+	<script src="assets/js/controllers/mainController.js" charset="utf-8"></script>
+	<script src="assets/js/controllers/adminController.js" charset="utf-8"></script>
+	<script src="assets/js/controllers/resumeController.js" charset="utf-8"></script>
+	<script src="assets/js/factories/resumeFactory.js" charset="utf-8"></script>
+</body>
+</html>
