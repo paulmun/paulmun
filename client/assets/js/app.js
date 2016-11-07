@@ -1,4 +1,4 @@
-app = angular.module('main', ['ngRoute', 'ngAnimate']);
+app = angular.module('main', ['ngRoute', 'ngAnimate', 'snapscroll', 'swipe']);
 
 app.config(function($routeProvider){
 	$routeProvider
@@ -15,6 +15,12 @@ app.config(function($routeProvider){
 	.when('/resume', {
 		templateUrl: 'partials/resume.html',
 		controller: 'resumeController'
+	})
+	.when('/about', {
+		templateUrl: 'partials/about.html'
+	})
+	.when('/portfolio', {
+		templateUrl: 'partials/portfolio.html'
 	})
 	.otherwise('/');
 })

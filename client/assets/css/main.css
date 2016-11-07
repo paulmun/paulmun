@@ -1,6 +1,3 @@
-body {
-  background-color: #252e35; }
-
 .fade.ng-hide {
   opacity: 0; }
 
@@ -8,39 +5,39 @@ body {
 .fade.ng-hide-add {
   transition: all linear 500ms; }
 
-.header {
-  width: 89vw;
+.header, .altHeader {
+  width: 94vw;
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 12vh;
-  padding: 2vh 3vw; }
-  .header svg {
+  height: 7vh;
+  padding: 2vh 3vw;
+  position: fixed;
+  z-index: 5; }
+  .header svg, .altHeader svg {
     width: 20vw;
     float: left;
     position: relative;
     z-index: 1; }
-  .header .logo {
-    stroke: #ffffff; }
-  .header .logo2 {
-    stroke: #252e35; }
-  .header #headerText {
+  .header .logo2, .altHeader .logo2 {
+    stroke: black; }
+  .header #headerText, .altHeader #headerText {
     display: none; }
-  .header #menu {
+  .header #menu, .altHeader #menu {
     display: none; }
-  .header #mobileMenu, .header #mobileMenu2 {
-    top: -2vw;
+  .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
+    top: -0.5vw;
     width: 10vw;
     height: 8vw;
     float: right;
     display: inline-block;
     vertical-align: top;
     margin: 3px 3px 0 0;
-    z-index: 1;
+    z-index: 4;
     position: relative; }
-    .header #mobileMenu a, .header #mobileMenu2 a {
+    .header #mobileMenu a, .header #mobileMenu2 a, .altHeader #mobileMenu a, .altHeader #mobileMenu2 a {
       text-decoration: none; }
-    .header #mobileMenu #closeMenu, .header #mobileMenu2 #closeMenu {
+    .header #mobileMenu #closeMenu, .header #mobileMenu2 #closeMenu, .altHeader #mobileMenu #closeMenu, .altHeader #mobileMenu2 #closeMenu {
       margin: 0;
       z-index: 1;
       position: absolute;
@@ -50,7 +47,7 @@ body {
       left: -8vw;
       bottom: -0.5vw;
       font-weight: 600; }
-    .header #mobileMenu span, .header #mobileMenu2 span {
+    .header #mobileMenu span, .header #mobileMenu2 span, .altHeader #mobileMenu span, .altHeader #mobileMenu2 span {
       width: 100%;
       height: 1.7vw;
       margin-bottom: 1.4vw;
@@ -58,46 +55,60 @@ body {
       position: absolute;
       z-index: 1;
       transition: 0.5s; }
-  .header #mobileMenu span {
-    background-color: white; }
-  .header #mobileMenu #m1 {
+  .header #mobileMenu #m1, .altHeader #mobileMenu #m1 {
     bottom: 3.1vw; }
-  .header #mobileMenu #m2 {
+  .header #mobileMenu #m2, .altHeader #mobileMenu #m2 {
     bottom: 0; }
-  .header #mobileMenu #m3 {
+  .header #mobileMenu #m3, .altHeader #mobileMenu #m3 {
     bottom: -3.1vw; }
-  .header #mobileMenu2 span {
-    background-color: #252e35; }
-  .header #mobileMenu2 #closeMenu {
-    color: #252e35; }
-  .header #mobileMenu2 #m1 {
+  .header #mobileMenu2 span, .altHeader #mobileMenu2 span {
+    background-color: black; }
+  .header #mobileMenu2 #closeMenu, .altHeader #mobileMenu2 #closeMenu {
+    color: black; }
+  .header #mobileMenu2 #m1, .altHeader #mobileMenu2 #m1 {
     bottom: -3.1vw; }
-  .header #mobileMenu2 #m2 {
+  .header #mobileMenu2 #m2, .altHeader #mobileMenu2 #m2 {
     bottom: -3.1vw; }
-  .header #mobileMenu2 #m3 {
+  .header #mobileMenu2 #m3, .altHeader #mobileMenu2 #m3 {
     bottom: -3.1vw; }
 
+.header {
+  background-color: rgba(0, 0, 0, 0.25); }
+  .header .logo {
+    stroke: #ffffff; }
+  .header #mobileMenu span {
+    background-color: #ffffff; }
+
+.altheader {
+  background-color: transparent; }
+  .altheader .logo {
+    stroke: #252e35; }
+  .altheader #mobileMenu span {
+    background-color: #252e35; }
+
 #menuShow {
-  height: 84vh;
+  height: 85vh;
   top: 0;
   left: 0;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   background-color: white;
-  z-index: 0;
+  z-index: 4;
   padding-top: 15vh; }
   #menuShow ul {
     list-style: none;
     font-family: 'Gotham';
     text-transform: uppercase; }
     #menuShow ul li a {
-      text-decoration: none;
-      border-bottom: 1vw lightgrey solid;
-      padding-bottom: .8vw;
+      border-bottom: 1vw solid lightgrey;
       color: black;
-      font-size: 8vw;
+      font-family: "Utopia";
+      font-size: 7.5vw;
       font-weight: 600;
-      line-height: 14vw; }
+      line-height: 16vw;
+      padding-bottom: 0.8vw;
+      text-decoration: none;
+      text-transform: uppercase; }
   #menuShow #social {
     position: absolute;
     bottom: -3vw;
@@ -134,55 +145,154 @@ body {
     .header #mobileMenu {
       display: none; } }
 #introduction {
-  width: 100%;
+  background-image: url(../img/backgrounds/chicken.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  overflow: hidden;
   text-align: center;
   font-family: 'Gotham';
   text-transform: uppercase;
   color: white;
-  margin: 23vh 0 25vh;
-  letter-spacing: .8vw;
-  display: block; }
-  #introduction h2 {
+  letter-spacing: .8vw; }
+  #introduction .darkener h2 {
+    margin: 41vh auto 2vh;
+    background-color: #bfbfbf;
+    width: 65vw;
+    padding: 3vw;
+    font-family: 'Utopia';
     font-size: 8vw;
-    margin: 0; }
-  #introduction .divider {
-    width: 80%;
-    height: 2px;
-    background-color: white;
-    margin: 2vh auto;
-    display: block; }
-  #introduction p {
-    font-size: 4vw;
-    margin: 0; }
-  #introduction #portfolioLink {
-    font-family: 'Gotham';
-    color: white;
-    text-align: center;
-    margin-top: 20vh; }
-    #introduction #portfolioLink p {
-      text-transform: none;
-      margin-bottom: 2vw; }
+    letter-spacing: 1.5vw; }
+  #introduction .darkener p {
+    margin: 0;
+    font-size: 4vw; }
 
-#aboutMeBlog p {
-  font-family: 'Gotham';
-  color: white;
+#portfolioLink {
+  height: 30vh;
+  background-color: #0f3b6e;
+  overflow: hidden;
+  padding-top: 5vh;
+  box-shadow: 0vh 0vh 1vh 1vh rgba(0, 0, 0, 0.3);
+  position: relative;
   text-align: center;
-  width: 80vw;
-  font-size: 4vw;
-  margin: 0 auto; }
+  font-family: 'Utopia';
+  letter-spacing: 0.75vw;
+  font-size: 6vw;
+  color: white; }
+  #portfolioLink a {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: 0.75vw solid #e3c263;
+    color: #e3c263;
+    font-size: 6vw;
+    font-weight: 400;
+    letter-spacing: 0.8vw;
+    margin: 1vh auto 0;
+    text-transform: uppercase;
+    width: 60vw;
+    border-radius: 0;
+    font-family: 'Gotham';
+    padding: 4vw 4vw; }
+
+#aboutMe {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../img/backgrounds/water.jpg);
+  background-position: 48% center;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center; }
+  #aboutMe #aboutMeTop {
+    padding: 5vw;
+    margin: 25vh auto 10vh;
+    width: 80%;
+    display: block; }
+    #aboutMe #aboutMeTop h2 {
+      font-family: 'Gotham';
+      color: white;
+      text-transform: uppercase;
+      font-size: 8vw;
+      letter-spacing: 0.8vh;
+      margin: 0; }
+    #aboutMe #aboutMeTop p {
+      margin: 3vh auto;
+      text-align: center;
+      width: 80vw;
+      color: white;
+      font-family: "Utopia";
+      letter-spacing: 0.25vw;
+      font-size: 5vw;
+      font-weight: 200; }
+  #aboutMe .divider {
+    height: 0.5vw;
+    width: 85vw;
+    margin: 10vw auto;
+    display: block; }
+  #aboutMe #meNavi {
+    display: block;
+    margin: 0 auto;
+    width: 82vw; }
+    #aboutMe #meNavi a {
+      font-family: 'Gotham';
+      display: inline-block;
+      padding: 5vw 0;
+      margin: 0 1vw 3vw;
+      vertical-align: top;
+      width: 39vw;
+      letter-spacing: 0.5vw;
+      text-decoration: none; }
+    #aboutMe #meNavi a:nth-child(1) {
+      margin-left: 0; }
+    #aboutMe #meNavi a:nth-child(2) {
+      margin-right: 0; }
+    #aboutMe #meNavi a:nth-child(3) {
+      background-color: #e3c263;
+      margin: 0;
+      width: 99%; }
 
 .buttons {
-  background-color: transparent;
-  height: 6vh;
   width: 50vw;
   border: none;
-  border-radius: 5px;
+  background-color: #bfbfbf;
   font-size: 6vw;
-  letter-spacing: .8vw;
-  font-weight: 800;
-  color: white;
+  font-weight: 600;
   text-transform: uppercase;
-  background-color: #36d6af; }
+  letter-spacing: .8vw;
+  color: white; }
+  .buttons a {
+    text-decoration: none;
+    color: white; }
+
+.darkener {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  z-index: 1; }
+
+.divider {
+  width: 80vw;
+  height: 0.2vw;
+  background-color: white; }
+
+#indexContact {
+  background-color: #0f3b6e;
+  box-shadow: 0 -0.5vh 1vh 0 rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  text-align: center; }
+  #indexContact button {
+    background: transparent none repeat scroll 0 0;
+    font-size: 11vw;
+    height: 100%;
+    letter-spacing: 1.25vh;
+    margin: 7vh auto;
+    width: 100%;
+    cursor: pointer; }
 
 #contactForm {
   text-align: center;
@@ -266,6 +376,157 @@ body {
   #contactInfo p {
     font-size: 4vw; }
 
+#resumeForm {
+  width: 100vw;
+  font-family: 'Gotham';
+  text-align: center;
+  letter-spacing: 0.8vw;
+  color: black; }
+  #resumeForm h2 {
+    margin-top: 12vh;
+    font-weight: 600; }
+  #resumeForm form {
+    width: 100%;
+    font-weight: 200;
+    letter-spacing: 0.8vw; }
+    #resumeForm form textarea {
+      resize: none;
+      overflow: hidden;
+      width: 80%;
+      height: 10vw;
+      margin: 0 auto;
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 0.5vw;
+      margin-bottom: 5vw;
+      padding: 2vw;
+      color: black;
+      font-family: 'Gotham';
+      font-weight: 200;
+      font-size: 4vw;
+      letter-spacing: 0.8vw; }
+    #resumeForm form input {
+      width: 38vw;
+      height: 10vw;
+      padding: 2vw;
+      background-color: transparent;
+      border-radius: 0.5vw;
+      border: 1px solid black;
+      font-size: 4vw;
+      color: black; }
+    #resumeForm form input:nth-child(1),
+    #resumeForm form input:nth-child(2) {
+      width: 80vw;
+      margin: 0 auto 3vh; }
+    #resumeForm form input[type=submit] {
+      background-color: #36d6af;
+      border: none;
+      cursor: pointer;
+      font-size: 5vw;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8vw;
+      margin: 20vw; }
+    #resumeForm form p {
+      margin: 10vw 0;
+      text-transform: uppercase;
+      font-size: 5vw;
+      font-weight: 600; }
+    #resumeForm form button {
+      height: 10vw;
+      width: 38vw;
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 0.5vw;
+      display: block;
+      margin: 5vw auto;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 4vw; }
+
+.resume {
+  text-align: left;
+  padding: 5vw;
+  font-family: 'Gotham';
+  margin: 23vw 3vw;
+  background-color: white;
+  box-shadow: 1vw 1vw 4vw 1vw rgba(0, 0, 0, 0.8); }
+  .resume .experience {
+    margin-bottom: 5vh;
+    overflow: hidden; }
+    .resume .experience .expTop {
+      overflow: hidden; }
+      .resume .experience .expTop .expTopLeft {
+        float: left;
+        width: 75vw; }
+      .resume .experience .expTop .collapser {
+        width: 8vw;
+        height: 8vw;
+        float: right;
+        margin-top: 5vw; }
+        .resume .experience .expTop .collapser span {
+          background-color: black;
+          content: "";
+          display: block;
+          height: 2vw;
+          position: absolute;
+          width: 8vw; }
+        .resume .experience .expTop .collapser span:nth-child(1) {
+          transform: rotate(90deg); }
+    .resume .experience h2 {
+      font-family: 'Utopia';
+      margin: 0;
+      font-size: 6.5vw; }
+    .resume .experience .position {
+      font-size: 4vw;
+      text-transform: uppercase;
+      letter-spacing: 0.5vw;
+      margin: 0;
+      font-weight: 600; }
+    .resume .experience .startEnd {
+      display: block; }
+      .resume .experience .startEnd p {
+        display: inline-block;
+        font-size: 3.5vw;
+        margin: 0;
+        text-transform: uppercase; }
+    .resume .experience .expHidden {
+      display: none; }
+    .resume .experience .expShown {
+      display: block; }
+    .resume .experience ul {
+      padding-left: 5vw; }
+      .resume .experience ul li {
+        font-size: 3.75vw;
+        letter-spacing: 0.25vw; }
+
+#aboutImage {
+  background-image: url(../img/backgrounds/snow.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  #aboutImage .darkener h2 {
+    margin: 41vh auto 2vh;
+    background-color: #bfbfbf;
+    width: 65vw;
+    padding: 3vw;
+    font-family: 'Utopia';
+    font-size: 8vw;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    color: white; }
+  #aboutImage .darkener p {
+    margin: 0;
+    font-size: 4vw;
+    color: white; }
+
+@font-face {
+  font-family: 'Utopia';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UtopiaStd-Disp.otf") format("opentype"); }
 @font-face {
   font-family: 'Gotham';
   font-style: normal;
@@ -286,5 +547,32 @@ body {
   font-style: 'black';
   font-weight: 800;
   src: url("../fonts/Gotham-Black.otf") format("opentype"); }
+body {
+  margin: 0;
+  background-color: #333; }
+
+#scroller {
+  position: absolute;
+  top: 0;
+  color: red; }
+
+#snapperNavi {
+  bottom: 0;
+  color: white;
+  font-family: "Gotham";
+  position: fixed;
+  text-align: center;
+  width: 100vw; }
+  #snapperNavi a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 5vw; }
+  #snapperNavi a:nth-child(2) {
+    float: left;
+    margin-left: 5vw; }
+  #snapperNavi a:nth-child(3) {
+    float: right;
+    margin-right: 5vw; }
 
 /*# sourceMappingURL=main.css.map */

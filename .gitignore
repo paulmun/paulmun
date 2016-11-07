@@ -1,2 +1,6 @@
 /client/assets/scss
-/client/assets/fonts
+gulpfile.js
+paulsite.sublime-workspace
+paulsitecss.sublime-workspace
+bower_components
+node_modules

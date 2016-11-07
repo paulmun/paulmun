@@ -1,0 +1,146 @@
+<!-- <div class="resume" ng-repeat="experience in resume track by $index">
+	<div class="experience">
+		<h2>{{experience.employer}}</h2>
+		<p class="position">{{experience.position}}</p>
+
+		<div class="startEnd">
+			<p>{{experience.start}}</p>
+			<p>-</p>
+			<p>{{experience.end}}</p>
+		</div>
+		<ul>
+			<li ng-repeat="exp in experience.experiences">
+				<p>{{exp}}</p>
+			</li>
+		</ul>
+	</div>
+</div> -->
+
+<div class="resume">
+	<div class="experience">
+		<div class="expTop">
+			<div class="expTopLeft">
+				<h2>Best Electric Corporation</h2>
+				<p class="position">Inside Project Manager</p>
+			</div>
+			<div class="collapser">
+				<a href="" ng-click="collapse(0)">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+		<div class="startEnd {{foldClass[0]}}">
+			<p>2015</p>
+			<p>-</p>
+			<p>2016</p>
+		</div>
+		<ul class="{{foldClass[0]}}">
+			<li>
+				<p>Managed $1.4M in electrical contracting projects ranging from residential remodels to new commercial constructions.</p>
+			</li>
+			<li>
+				<p>Consistently drove projects to completion on time by coordinating with Outside Project Manager to schedule work crews, troubleshoot issues, and gather necessary information for success.</p>
+			</li>
+			<li>
+				<p>Worked on site, coordinated with vendors and Project Engineers and drafted technical drawings on AutoCAD, as needed.</p>
+			</li>
+			<li>
+				<p>Optimized areas of inefficiency and loss by instating and collecting data through cloud-based construction project management software – enabling active quantification of daily company activity.</p>
+			</li>
+		</ul>
+	</div>
+	<div class="experience">
+		<div class="expTop">
+			<div class="expTopLeft">
+				<h2>Sinasoid</h2>
+				<p class="position">Co-founder/Product Manager</p>
+			</div>
+			<div class="collapser">
+				<a href="" ng-click="collapse(1)">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+		
+		<div class="startEnd {{foldClass[1]}}">
+			<p>2013</p>
+			<p>-</p>
+			<p>2015</p>
+		</div>
+		<ul class="{{foldClass[1]}}">
+			<li>
+				<p>Penetrated a saturated market by leading a cross-functional team to take an innovative online custom instrument cable ordering platform from concept to market through agile development cycles.</p>
+			</li>
+			<li>
+				<p>Generated use cases, wire-frames, mockups and functional specifications. Created branding and packaging.</p>
+			</li>
+			<li>
+				<p>Drove project development requirements to completion on tight deadlines – stepping in to code, develop marketing campaigns and design as needed.</p>
+			</li>
+			<li>
+				<p>Led development of second business concept built around group buying for pro audio equipment.</p>
+			</li>
+			<li>
+				<p>Led development of guitar pedal concept – contributing largely to logic behind programming in relation to use cases and functions. Sourced parts and oversaw design and marketing plan.</p>
+			</li>
+		</ul>
+	</div>
+	<div class="experience">
+		<div class="expTop">
+			<div class="expTopLeft">
+				<h2>Boxwave Corporation</h2>
+				<p class="position">Manager of Operations and Logistics</p>
+			</div>
+			<div class="collapser">
+				<a href="" ng-click="collapse(2)">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+		
+		<div class="startEnd {{foldClass[2]}}">
+			<p>2012</p>
+			<p>-</p>
+			<p>2013</p>
+		</div>
+		<ul class="{{foldClass[2]}}">
+			<li>
+				<p>Decreased labor costs by over $50,000 a year by increasing order fulfillment efficiency by nearly 250%. Expanded 2000 order/day capacity amongst five people to 3000 order/day capacity amongst three and dropped a sub-1% order inaccuracy rate by an additional .02% using a detailed order sorting criteria and lean processes.</p>
+			</li>
+			<li>
+				<p>Built and refined an inventory forecasting tool to assist in monitoring over 1000 unique active Amazon product listings – utilizing sales data to predict sales volume and save thousands of dollars weekly.</p>
+			</li>
+		</ul>
+	</div>
+	<div class="experience">
+		<div class="expTop">
+			<div class="expTopLeft">
+				<h2>Boxwave Corporation</h2>
+				<p class="position">Operations Associate</p>
+			</div>
+			<div class="collapser">
+				<a href="" ng-click="collapse(3)">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+		
+		<div class="startEnd {{foldClass[3]}}">
+			<p>2011</p>
+			<p>-</p>
+			<p>2012</p>
+		</div>
+		<ul class="{{foldClass[3]}}">
+			<li>
+				<p>Fulfilled hundreds of orders daily while maintaining 99.99% order accuracy rate and reconciled inventory regularly to ensure that team met the demands of order volume.</p>
+			</li>
+			<li>
+				<p>Improved product design and ensured quality of products going out to customers by implementing strict product testing requirements.</p>
+			</li>
+		</ul>
+	</div>
+</div>

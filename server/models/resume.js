@@ -8,6 +8,12 @@ var ResumeSchema = new Schema({
 		trim: true
 	},
 
+	position: {
+		type: String,
+		required: [true, 'Enter a Position'],
+		trime: true
+	},
+
 	start: {
 		type: String,
 		required: [true, 'Enter a Start Date'],
@@ -24,7 +30,7 @@ var ResumeSchema = new Schema({
 		ref: 'User'
 	},
 
-	experience: Array
+	experiences: Array
 });
 
 

@@ -1,0 +1,26 @@
+{
+  "name": "gulp-expressjs-nodemon-browser-sync",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paulmun/paulmun",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-wheelie": "^1.1.2",
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8",
+    "angular-snapscroll": "^1.0.0",
+    "angular-swipe": "~0.1.0"
+  }
+}
