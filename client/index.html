@@ -32,9 +32,14 @@
 		<div id="headerText">
 			<p id="name">Paul Mun</p>
 			<p>Product Manager</p>
-			<p>Full-Stack Web Dev</p>
+			<p>Full-Stack Dev</p>
 		</div>
-		<a id="menu" href="">Menu</a>
+		<div id="menu">
+			<a href="" ng-click="menuExpand()" id="largeScreenMenu">Menu</a>
+			<a href="" class="mediaLinks"><img src=""></a>
+			<a href="" class="mediaLinks"><img src=""></a>
+			<a href="" class="mediaLinks"><img src=""></a>
+		</div>
 		<a href="" id={{menuClass}} ng-click="menuExpand()">
 			<p id="closeMenu" ng-hide="showMenu">close</p>
 			<span id="m1"></span>
@@ -45,7 +50,7 @@
 	<div id="menuShow" class="fade" ng-hide="showMenu">
 		<ul>
 			<li><a href="#/portfolio">My Work</a></li>
-			<li><a href="#/blog">Blog</a></li>
+			<!-- <li><a href="#/blog">Blog</a></li> -->
 			<li><a href="#/resume">Resume</a></li>
 			<li><a href="#/about">About</a></li>
 			<li><a href="#/contact">Get in Touch</a></li>

@@ -10,7 +10,7 @@
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 7vh;
+  height: 11.5vw;
   padding: 2vh 3vw;
   position: fixed;
   z-index: 5; }
@@ -121,29 +121,172 @@
         #menuShow #social li a img {
           width: 13vw; }
 
-@media only screen and (min-width: 600px) {
-  .header {
-    margin: 15px 0 0 15px; }
-    .header img {
-      display: inline-block;
-      width: 5.5%;
-      padding-top: 3px; }
-    .header #headerText {
+@media only screen and (min-width: 550px) {
+  .header, .altHeader {
+    height: 9.5vw; }
+    .header svg, .altHeader svg {
+      width: 16vw; }
+    .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
+      top: 0vw;
+      width: 9vw;
+      height: 6vw; }
+      .header #mobileMenu span, .header #mobileMenu2 span, .altHeader #mobileMenu span, .altHeader #mobileMenu2 span {
+        height: 1.5vw; }
+
+  #menuShow ul li a {
+    border-bottom: 0.8vw solid lightgrey;
+    font-size: 6.25vw; }
+  #menuShow #social li a img {
+    width: 12vw; } }
+@media only screen and (min-width: 768px) {
+  .header, .altHeader {
+    margin: 0;
+    height: 8vw;
+    padding: 2vw 2vw;
+    width: 96vw; }
+    .header svg, .altHeader svg {
+      width: 12vw; }
+    .header #headerText, .altHeader #headerText {
       display: inline-block;
       vertical-align: top;
       margin-left: 10px; }
-      .header #headerText #name {
+      .header #headerText #name, .altHeader #headerText #name {
         font-weight: 600;
-        font-size: 1.8vw; }
-      .header #headerText p {
+        font-size: 2.75vw; }
+      .header #headerText p, .altHeader #headerText p {
         display: block;
         font-family: 'Gotham';
         font-weight: 200;
         text-transform: uppercase;
-        font-size: .85vw;
-        margin: 0; }
-    .header #mobileMenu {
+        font-size: 1.25vw;
+        margin: 0 0 0 2vw; }
+    .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
+      top: 0vw;
+      width: 7vw;
+      height: 4.4vw; }
+      .header #mobileMenu span, .header #mobileMenu2 span, .altHeader #mobileMenu span, .altHeader #mobileMenu2 span {
+        height: 1vw;
+        margin-bottom: 0; }
+      .header #mobileMenu #m1, .header #mobileMenu2 #m1, .altHeader #mobileMenu #m1, .altHeader #mobileMenu2 #m1 {
+        bottom: 2.4vw; }
+      .header #mobileMenu #m3, .header #mobileMenu2 #m3, .altHeader #mobileMenu #m3, .altHeader #mobileMenu2 #m3 {
+        bottom: -2.4vw; }
+      .header #mobileMenu #closeMenu, .header #mobileMenu2 #closeMenu, .altHeader #mobileMenu #closeMenu, .altHeader #mobileMenu2 #closeMenu {
+        font-size: 4.5vw;
+        bottom: -1.5vw;
+        left: -5vw; }
+    .header #mobileMenu2 #m1, .altHeader #mobileMenu2 #m1 {
+      bottom: -2.5vw; }
+    .header #mobileMenu2 #m2, .altHeader #mobileMenu2 #m2 {
+      bottom: -2.5vw; }
+    .header #mobileMenu2 #m3, .altHeader #mobileMenu2 #m3 {
+      bottom: -2.5vw; }
+    .header #mobileMenu2 #closeMenu, .altHeader #mobileMenu2 #closeMenu {
+      font-size: 4.5vw;
+      bottom: -1.5vw;
+      left: -5vw; }
+
+  .header #headerText p {
+    color: white; }
+
+  .altheader #headerText p {
+    color: black; }
+
+  #menuShow ul li a {
+    border-bottom: .75vw solid lightgrey;
+    font-size: 5vw; }
+  #menuShow #social li a img {
+    width: 7vw; } }
+@media only screen and (min-width: 955px) {
+  .header, .altHeader {
+    padding: 1.5vw;
+    width: 97vw;
+    height: none;
+    overflow: hidden;
+    background: transparent; }
+    .header svg, .altHeader svg {
+      width: 7vw; }
+    .header .logo, .header .logo2, .altHeader .logo, .altHeader .logo2 {
+      stroke: #ffffff; }
+    .header #headerText, .altHeader #headerText {
+      color: white;
+      height: 6vw;
+      margin-left: 0.25vw; }
+      .header #headerText #name, .altHeader #headerText #name {
+        font-size: 1.75vw; }
+      .header #headerText p, .altHeader #headerText p {
+        font-size: 1.25vw;
+        letter-spacing: 0.45vw;
+        line-height: 1.5vw; }
+    .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
+      display: none; }
+    .header #menu, .altHeader #menu {
+      display: block; }
+      .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
+        display: inline-block;
+        font-family: 'Gotham';
+        text-decoration: none;
+        letter-spacing: 0.5vw;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2vw; }
+
+  #menuShow {
+    background-color: transparent;
+    padding-top: 8vw;
+    height: none; }
+    #menuShow ul {
+      margin-top: 3vw; }
+      #menuShow ul li a {
+        border-bottom: 0.25vw solid lightgrey;
+        color: white;
+        font-family: "Gotham";
+        font-size: 1.5vw;
+        line-height: 4vw;
+        padding-bottom: 0.3vw;
+        letter-spacing: 0.2vw; }
+    #menuShow #social {
       display: none; } }
+@media only screen and (min-width: 1450px) {
+  .header svg, .altHeader svg {
+    width: 6vw; }
+  .header #headerText, .altHeader #headerText {
+    height: 5vw; }
+    .header #headerText #name, .altHeader #headerText #name {
+      font-size: 1.5vw; }
+    .header #headerText p, .altHeader #headerText p {
+      font-size: 1.1vw;
+      line-height: 1.25vw; }
+  .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
+    font-size: 1.5vw; }
+
+  #menuShow ul {
+    margin-top: 0.5vw; }
+    #menuShow ul li a {
+      font-size: 1.25vw;
+      letter-spacing: 0.2vw; } }
+@media only screen and (min-width: 1650px) {
+  .header svg, .altHeader svg {
+    width: 5.5vw; }
+  .header #headerText, .altHeader #headerText {
+    height: 4.5vw; }
+    .header #headerText #name, .altHeader #headerText #name {
+      font-size: 1.25vw; }
+    .header #headerText p, .altHeader #headerText p {
+      font-size: 0.9vw;
+      line-height: 1.1vw;
+      letter-spacing: 0.35vw; }
+  .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
+    font-size: 1.25vw; }
+
+  #menuShow ul {
+    margin-top: -0.5vw; }
+    #menuShow ul li a {
+      font-size: 1vw;
+      line-height: 3vw;
+      padding-bottom: 0.2vw;
+      border-bottom: 0.15vw solid lightgrey; } }
 #introduction {
   background-image: url(../img/backgrounds/chicken.jpg);
   background-position: center center;
@@ -159,35 +302,41 @@
   color: white;
   letter-spacing: .8vw; }
   #introduction .darkener h2 {
-    margin: 41vh auto 2vh;
+    margin: 41vh auto 1.5vw;
     background-color: #bfbfbf;
-    width: 65vw;
-    padding: 3vw;
+    width: 57vw;
+    padding: 2vw;
     font-family: 'Utopia';
-    font-size: 8vw;
+    font-size: 7vw;
     letter-spacing: 1.5vw; }
   #introduction .darkener p {
     margin: 0;
-    font-size: 4vw; }
+    font-size: 3.25vw; }
 
 #portfolioLink {
-  height: 30vh;
-  background-color: #0f3b6e;
+  height: 55vw;
+  background-color: #fcfcfc;
   overflow: hidden;
-  padding-top: 5vh;
+  padding: 0;
   box-shadow: 0vh 0vh 1vh 1vh rgba(0, 0, 0, 0.3);
   position: relative;
   text-align: center;
-  font-family: 'Utopia';
+  font-family: 'Gotham';
   letter-spacing: 0.75vw;
-  font-size: 6vw;
-  color: white; }
+  font-size: 3.5vw;
+  color: black; }
+  #portfolioLink p {
+    margin: 8vw auto;
+    width: 90%;
+    font-size: 3.5vw;
+    color: black;
+    letter-spacing: 0.5vw; }
   #portfolioLink a {
     display: block;
     text-decoration: none;
     background: none;
-    border: 0.75vw solid #e3c263;
-    color: #e3c263;
+    border: 0.75vw solid #f5d16b;
+    color: #f5d16b;
     font-size: 6vw;
     font-weight: 400;
     letter-spacing: 0.8vw;
@@ -195,7 +344,7 @@
     text-transform: uppercase;
     width: 60vw;
     border-radius: 0;
-    font-family: 'Gotham';
+    font-family: 'Utopia';
     padding: 4vw 4vw; }
 
 #aboutMe {
@@ -208,7 +357,7 @@
   text-align: center; }
   #aboutMe #aboutMeTop {
     padding: 5vw;
-    margin: 25vh auto 10vh;
+    margin: 25vh auto 5vh;
     width: 80%;
     display: block; }
     #aboutMe #aboutMeTop h2 {
@@ -219,13 +368,12 @@
       letter-spacing: 0.8vh;
       margin: 0; }
     #aboutMe #aboutMeTop p {
-      margin: 3vh auto;
+      margin: 3vw auto;
       text-align: center;
-      width: 80vw;
       color: white;
-      font-family: "Utopia";
+      font-family: 'Gotham';
       letter-spacing: 0.25vw;
-      font-size: 5vw;
+      font-size: 4vw;
       font-weight: 200; }
   #aboutMe .divider {
     height: 0.5vw;
@@ -235,9 +383,9 @@
   #aboutMe #meNavi {
     display: block;
     margin: 0 auto;
-    width: 82vw; }
+    width: 85vw; }
     #aboutMe #meNavi a {
-      font-family: 'Gotham';
+      font-family: 'Utopia';
       display: inline-block;
       padding: 5vw 0;
       margin: 0 1vw 3vw;
@@ -250,14 +398,12 @@
     #aboutMe #meNavi a:nth-child(2) {
       margin-right: 0; }
     #aboutMe #meNavi a:nth-child(3) {
-      background-color: #e3c263;
       margin: 0;
-      width: 99%; }
+      width: 98%; }
 
 .buttons {
   width: 50vw;
-  border: none;
-  background-color: #bfbfbf;
+  border: 0.75vw solid white;
   font-size: 6vw;
   font-weight: 600;
   text-transform: uppercase;
@@ -268,7 +414,7 @@
     color: white; }
 
 .darkener {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100vh;
   overflow: hidden;
   position: absolute;
@@ -281,19 +427,162 @@
   background-color: white; }
 
 #indexContact {
-  background-color: #0f3b6e;
+  background-color: #bfbfbf;
   box-shadow: 0 -0.5vh 1vh 0 rgba(0, 0, 0, 0.55);
   overflow: hidden;
-  text-align: center; }
-  #indexContact button {
-    background: transparent none repeat scroll 0 0;
-    font-size: 11vw;
-    height: 100%;
-    letter-spacing: 1.25vh;
-    margin: 7vh auto;
-    width: 100%;
-    cursor: pointer; }
+  text-align: center;
+  width: 100vw;
+  padding: 12vw 0;
+  border: none;
+  font-size: 11vw;
+  letter-spacing: 1vh;
+  cursor: pointer;
+  font-family: 'Gotham';
+  text-decoration: none;
+  box-shadow: none; }
 
+@media only screen and (min-width: 550px) {
+  #introduction .darkener h2 {
+    font-size: 7vw;
+    width: 60vw; }
+  #introduction .darkener p {
+    font-size: 3vw; }
+
+  #portfolioLink p {
+    font-size: 3.25vw;
+    margin: 10vw auto 6vw;
+    width: 85%; }
+  #portfolioLink a {
+    padding: 2vw;
+    width: 47vw; }
+
+  #aboutMe #aboutMeTop h2 {
+    font-size: 6.5vw; }
+  #aboutMe #aboutMeTop p {
+    font-size: 3.25vw; }
+  #aboutMe #meNavi a {
+    padding: 3vw 0;
+    width: 34vw;
+    font-size: 5vw; }
+
+  #indexContact {
+    font-size: 9vw; } }
+@media only screen and (min-width: 768px) {
+  #introduction .darkener h2 {
+    font-size: 5vw;
+    margin: 41vh auto 1vh;
+    padding: 1.5vw;
+    width: 45vw; }
+  #introduction .darkener p {
+    font-size: 2vw; }
+
+  #portfolioLink {
+    height: 42vw;
+    font-size: 4vw; }
+    #portfolioLink p {
+      font-size: 3vw; }
+    #portfolioLink a {
+      font-size: 4vw;
+      width: 40vw; }
+
+  #aboutMe #aboutMeTop h2 {
+    font-size: 4vw; }
+  #aboutMe #aboutMeTop p {
+    font-size: 2.5vw; }
+  #aboutMe #meNavi a {
+    padding: 2vw 0;
+    width: 30vw; }
+  #aboutMe .buttons {
+    font-size: 4vw; } }
+@media only screen and (min-width: 955px) {
+  #introduction .darkener h2 {
+    font-size: 2.5vw;
+    letter-spacing: 0.75vw;
+    width: 25vw; }
+  #introduction .darkener p {
+    font-size: 1.25vw; }
+
+  #portfolioLink p {
+    font-size: 2vw;
+    width: 59%;
+    letter-spacing: 0.25vw; }
+  #portfolioLink a {
+    font-size: 2.5vw;
+    width: 26vw;
+    border: 0.5vw solid #f5d15b; }
+
+  #aboutMe #aboutMeTop {
+    margin: 25vh auto 0; }
+    #aboutMe #aboutMeTop h2 {
+      font-size: 3.75vw; }
+    #aboutMe #aboutMeTop p {
+      font-size: 1.7vw;
+      width: 75%; }
+  #aboutMe #meNavi a {
+    padding: 1.3vw 0;
+    width: 19vw;
+    font-size: 2.5vw;
+    border: 0.5vw solid white; }
+
+  #indexContact {
+    font-size: 7vw; } }
+@media only screen and (min-width: 1450px) {
+  #introduction .darkener h2 {
+    font-size: 2vw;
+    padding: 1vw;
+    width: 20vw; }
+  #introduction .darkener p {
+    font-size: 1vw;
+    letter-spacing: 0.65vw; }
+
+  #portfolioLink {
+    height: 21vw; }
+    #portfolioLink #lgScreenText {
+      font-family: 'Gotham';
+      font-size: 1vw;
+      font-weight: 200;
+      letter-spacing: 0.2vw;
+      margin: 5.5vw auto 3vw;
+      width: 38vw; }
+    #portfolioLink a {
+      font-family: 'Utopia';
+      font-size: 1.75vw;
+      padding: 1vw 2vw;
+      width: 15.75vw;
+      border: 0.25vw solid #f5d16b; }
+
+  #aboutMe #aboutMeTop {
+    margin: 20vw auto 0; }
+    #aboutMe #aboutMeTop h2 {
+      font-size: 2vw; }
+    #aboutMe #aboutMeTop p {
+      font-size: 1.1vw;
+      width: 49vw; }
+  #aboutMe #meNavi a {
+    font-size: 1.75vw;
+    letter-spacing: 0.75vw;
+    padding: 1vw 0;
+    width: 15vw;
+    border: 0.25vw solid #fff; }
+
+  #indexContact {
+    font-size: 5.5vw;
+    padding: 10vw 0; } }
+@media only screen and (min-width: 1650px) {
+  #introduction .darkener h2 {
+    font-size: 1.75vw;
+    padding: 0.75vw;
+    width: 18vw; }
+  #introduction .darkener p {
+    font-size: 0.8vw;
+    letter-spacing: 0.6vw; }
+
+  #aboutMe #aboutMeTop {
+    margin: 15vw auto 0; }
+
+  #indexContact {
+    font-size: 5vw;
+    padding: 10vw 0; } }
 #contactForm {
   text-align: center;
   width: 100%;
@@ -308,7 +597,7 @@
     font-size: 8vw;
     font-weight: 600;
     letter-spacing: .8vw;
-    margin-top: 15vw;
+    margin-top: 25vw;
     margin-bottom: 0; }
   #contactForm p {
     margin: 3vw auto 15vw; }
@@ -360,11 +649,11 @@
 
 #contactInfo {
   font-family: 'Gotham';
-  color: white;
+  color: black;
   text-align: center;
   width: 80%;
-  margin: 20vw auto;
-  border: 1vw solid white;
+  margin: 30vw auto 0;
+  border: 1vw solid black;
   padding-bottom: 15vw; }
   #contactInfo h3 {
     margin-top: 20vw;
@@ -373,8 +662,11 @@
     font-size: 5vw; }
   #contactInfo h3:nth-child(1) {
     margin-top: 15vw; }
-  #contactInfo p {
-    font-size: 4vw; }
+  #contactInfo a {
+    text-decoration: none;
+    color: black; }
+    #contactInfo a p {
+      font-size: 4vw; }
 
 #resumeForm {
   width: 100vw;
@@ -450,8 +742,7 @@
   padding: 5vw;
   font-family: 'Gotham';
   margin: 23vw 3vw;
-  background-color: white;
-  box-shadow: 1vw 1vw 4vw 1vw rgba(0, 0, 0, 0.8); }
+  background-color: white; }
   .resume .experience {
     margin-bottom: 5vh;
     overflow: hidden; }
@@ -472,8 +763,11 @@
           height: 2vw;
           position: absolute;
           width: 8vw; }
-        .resume .experience .expTop .collapser span:nth-child(1) {
-          transform: rotate(90deg); }
+        .resume .experience .expTop .collapser .plus {
+          transform: rotate(90deg);
+          transition: all linear 200ms; }
+        .resume .experience .expTop .collapser .minus {
+          transition: all linear 200ms; }
     .resume .experience h2 {
       font-family: 'Utopia';
       margin: 0;
@@ -492,9 +786,13 @@
         margin: 0;
         text-transform: uppercase; }
     .resume .experience .expHidden {
-      display: none; }
+      display: none;
+      opacity: 0;
+      transition: all linear 200ms; }
     .resume .experience .expShown {
-      display: block; }
+      display: block;
+      transition: all linear 200ms;
+      opacity: 1; }
     .resume .experience ul {
       padding-left: 5vw; }
       .resume .experience ul li {
@@ -520,7 +818,8 @@
   #aboutImage .darkener p {
     margin: 0;
     font-size: 4vw;
-    color: white; }
+    color: white;
+    font-family: 'Gotham'; }
 
 @font-face {
   font-family: 'Utopia';
@@ -549,7 +848,7 @@
   src: url("../fonts/Gotham-Black.otf") format("opentype"); }
 body {
   margin: 0;
-  background-color: #333; }
+  background-color: #FFF; }
 
 #scroller {
   position: absolute;

@@ -7,6 +7,12 @@ app.controller('resumeController', ['$scope', '$location', 'resumeFactory', func
 		'expHidden',
 		'expHidden'
 	];
+	$scope.plusMinus = [
+		'plus',
+		'plus',
+		'plus',
+		'plus'
+	];
 
 	resumeFactory.all(function(data){
 		if(data.errors){
@@ -19,9 +25,11 @@ app.controller('resumeController', ['$scope', '$location', 'resumeFactory', func
 	$scope.collapse = function(idx){
 		if($scope.foldClass[idx] == 'expHidden'){
 			$scope.foldClass[idx] = 'expShown';
+			$scope.plusMinus[idx] = 'minus';
 		}
 		else{
-			$scope.foldClass[idx] = 'expHidden';	
+			$scope.foldClass[idx] = 'expHidden';
+			$scope.plusMinus[idx] = 'plus';	
 		}
 		
 	}
