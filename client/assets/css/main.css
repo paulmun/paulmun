@@ -158,7 +158,7 @@
         font-family: 'Gotham';
         font-weight: 200;
         text-transform: uppercase;
-        font-size: 1.25vw;
+        font-size: 1.5vw;
         margin: 0 0 0 2vw; }
     .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
       top: 0vw;
@@ -308,6 +308,7 @@
     padding: 2vw;
     font-family: 'Utopia';
     font-size: 7vw;
+    font-weight: normal;
     letter-spacing: 1.5vw; }
   #introduction .darkener p {
     margin: 0;
@@ -335,8 +336,8 @@
     display: block;
     text-decoration: none;
     background: none;
-    border: 0.75vw solid #f5d16b;
-    color: #f5d16b;
+    border: 0.75vw solid #EDCB67;
+    color: #EDCB67;
     font-size: 6vw;
     font-weight: 400;
     letter-spacing: 0.8vw;
@@ -503,13 +504,13 @@
     font-size: 1.25vw; }
 
   #portfolioLink p {
-    font-size: 2vw;
+    font-size: 1.75vw;
     width: 59%;
     letter-spacing: 0.25vw; }
   #portfolioLink a {
     font-size: 2.5vw;
     width: 26vw;
-    border: 0.5vw solid #f5d15b; }
+    border: 0.5vw solid #EDCB67; }
 
   #aboutMe #aboutMeTop {
     margin: 25vh auto 0; }
@@ -549,7 +550,7 @@
       font-size: 1.75vw;
       padding: 1vw 2vw;
       width: 15.75vw;
-      border: 0.25vw solid #f5d16b; }
+      border: 0.25vw solid #EDCB67; }
 
   #aboutMe #aboutMeTop {
     margin: 20vw auto 0; }
