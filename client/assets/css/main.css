@@ -10,12 +10,12 @@
   overflow: hidden;
   top: 0;
   left: 0;
-  height: 11.5vw;
+  height: 9.5vw;
   padding: 2vh 3vw;
   position: fixed;
   z-index: 5; }
   .header svg, .altHeader svg {
-    width: 20vw;
+    width: 16vw;
     float: left;
     position: relative;
     z-index: 1; }
@@ -28,7 +28,7 @@
   .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
     top: -0.5vw;
     width: 10vw;
-    height: 8vw;
+    height: 6.5vw;
     float: right;
     display: inline-block;
     vertical-align: top;
@@ -119,7 +119,7 @@
       #menuShow #social li a {
         border: none; }
         #menuShow #social li a img {
-          width: 13vw; }
+          width: 11vw; }
 
 @media only screen and (min-width: 550px) {
   .header, .altHeader {
@@ -141,29 +141,31 @@
 @media only screen and (min-width: 768px) {
   .header, .altHeader {
     margin: 0;
-    height: 8vw;
+    height: 6.5vw;
     padding: 2vw 2vw;
     width: 96vw; }
     .header svg, .altHeader svg {
-      width: 12vw; }
+      width: 10vw; }
     .header #headerText, .altHeader #headerText {
       display: inline-block;
       vertical-align: top;
       margin-left: 10px; }
       .header #headerText #name, .altHeader #headerText #name {
         font-weight: 600;
-        font-size: 2.75vw; }
+        font-size: 2.25vw; }
       .header #headerText p, .altHeader #headerText p {
         display: block;
         font-family: 'Gotham';
         font-weight: 200;
         text-transform: uppercase;
-        font-size: 1.5vw;
+        font-size: 1.75vw;
+        line-height: 2vw;
+        letter-spacing: 0.3vw;
         margin: 0 0 0 2vw; }
     .header #mobileMenu, .header #mobileMenu2, .altHeader #mobileMenu, .altHeader #mobileMenu2 {
       top: 0vw;
       width: 7vw;
-      height: 4.4vw; }
+      height: 3.4vw; }
       .header #mobileMenu span, .header #mobileMenu2 span, .altHeader #mobileMenu span, .altHeader #mobileMenu2 span {
         height: 1vw;
         margin-bottom: 0; }
@@ -304,7 +306,7 @@
   #introduction .darkener h2 {
     margin: 41vh auto 1.5vw;
     background-color: #bfbfbf;
-    width: 57vw;
+    width: 59vw;
     padding: 2vw;
     font-family: 'Utopia';
     font-size: 7vw;
@@ -312,7 +314,7 @@
     letter-spacing: 1.5vw; }
   #introduction .darkener p {
     margin: 0;
-    font-size: 3.25vw; }
+    font-size: 3vw; }
 
 #portfolioLink {
   height: 55vw;
@@ -328,8 +330,9 @@
   color: black; }
   #portfolioLink p {
     margin: 8vw auto;
-    width: 90%;
-    font-size: 3.5vw;
+    width: 80%;
+    font-weight: 200;
+    font-size: 3.25vw;
     color: black;
     letter-spacing: 0.5vw; }
   #portfolioLink a {
@@ -346,7 +349,7 @@
     width: 60vw;
     border-radius: 0;
     font-family: 'Utopia';
-    padding: 4vw 4vw; }
+    padding: 3vw; }
 
 #aboutMe {
   height: 100vh;
@@ -365,16 +368,17 @@
       font-family: 'Gotham';
       color: white;
       text-transform: uppercase;
-      font-size: 8vw;
+      font-size: 6vw;
       letter-spacing: 0.8vh;
       margin: 0; }
     #aboutMe #aboutMeTop p {
       margin: 3vw auto;
       text-align: center;
+      width: 85%;
       color: white;
       font-family: 'Gotham';
       letter-spacing: 0.25vw;
-      font-size: 4vw;
+      font-size: 3.25vw;
       font-weight: 200; }
   #aboutMe .divider {
     height: 0.5vw;
@@ -388,12 +392,13 @@
     #aboutMe #meNavi a {
       font-family: 'Utopia';
       display: inline-block;
-      padding: 5vw 0;
+      padding: 3vw 0;
       margin: 0 1vw 3vw;
       vertical-align: top;
       width: 39vw;
       letter-spacing: 0.5vw;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: normal; }
     #aboutMe #meNavi a:nth-child(1) {
       margin-left: 0; }
     #aboutMe #meNavi a:nth-child(2) {
@@ -433,9 +438,9 @@
   overflow: hidden;
   text-align: center;
   width: 100vw;
-  padding: 12vw 0;
+  padding: 10vw 0;
   border: none;
-  font-size: 11vw;
+  font-size: 8vw;
   letter-spacing: 1vh;
   cursor: pointer;
   font-family: 'Gotham';
@@ -481,7 +486,9 @@
     height: 42vw;
     font-size: 4vw; }
     #portfolioLink p {
-      font-size: 3vw; }
+      font-size: 2.5vw;
+      letter-spacing: 0.25vw;
+      width: 70%; }
     #portfolioLink a {
       font-size: 4vw;
       width: 40vw; }
@@ -494,7 +501,10 @@
     padding: 2vw 0;
     width: 30vw; }
   #aboutMe .buttons {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+
+  #indexContact {
+    font-size: 7vw; } }
 @media only screen and (min-width: 955px) {
   #introduction {
     background-attachment: fixed; }
@@ -505,14 +515,16 @@
     #introduction .darkener p {
       font-size: 1.25vw; }
 
-  #portfolioLink p {
-    font-size: 1.75vw;
-    width: 59%;
-    letter-spacing: 0.25vw; }
-  #portfolioLink a {
-    font-size: 2.5vw;
-    width: 26vw;
-    border: 0.5vw solid #EDCB67; }
+  #portfolioLink {
+    height: 40vw; }
+    #portfolioLink p {
+      font-size: 1.75vw;
+      width: 59%;
+      letter-spacing: 0.25vw; }
+    #portfolioLink a {
+      font-size: 2.5vw;
+      width: 26vw;
+      border: 0.5vw solid #EDCB67; }
 
   #aboutMe {
     background-attachment: fixed; }
@@ -530,7 +542,8 @@
       border: 0.5vw solid white; }
 
   #indexContact {
-    font-size: 7vw; } }
+    font-size: 6vw;
+    padding: 9vw 0; } }
 @media only screen and (min-width: 1450px) {
   #introduction .darkener h2 {
     font-size: 2vw;
@@ -586,8 +599,8 @@
     margin: 15vw auto 0; }
 
   #indexContact {
-    font-size: 5vw;
-    padding: 10vw 0; } }
+    font-size: 4.5vw;
+    padding: 6.75vw 0; } }
 #contactForm {
   text-align: center;
   width: 100%;
@@ -746,8 +759,18 @@
   text-align: left;
   padding: 5vw;
   font-family: 'Gotham';
-  margin: 23vw 3vw;
+  margin: 17vw 0.5vw;
   background-color: white; }
+  .resume .resumeTitle {
+    border-bottom: 0.5vw solid lightgrey;
+    font-family: 'Utopia';
+    font-size: 5.5vw;
+    letter-spacing: 0.5vw;
+    margin: 4vw auto 8vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%; }
   .resume .experience {
     margin-bottom: 5vh;
     overflow: hidden; }
@@ -757,17 +780,17 @@
         float: left;
         width: 75vw; }
       .resume .experience .expTop .collapser {
-        width: 8vw;
-        height: 8vw;
+        width: 6vw;
+        height: 4vw;
         float: right;
-        margin-top: 5vw; }
+        margin-top: 3vw; }
         .resume .experience .expTop .collapser span {
           background-color: black;
           content: "";
           display: block;
-          height: 2vw;
+          height: 1.25vw;
           position: absolute;
-          width: 8vw; }
+          width: 6vw; }
         .resume .experience .expTop .collapser .plus {
           transform: rotate(90deg);
           transition: all linear 200ms; }
@@ -776,18 +799,20 @@
     .resume .experience h2 {
       font-family: 'Utopia';
       margin: 0;
-      font-size: 6.5vw; }
+      font-size: 4.25vw;
+      letter-spacing: 0.25vw;
+      font-weight: normal; }
     .resume .experience .position {
-      font-size: 4vw;
+      font-size: 3vw;
       text-transform: uppercase;
       letter-spacing: 0.5vw;
       margin: 0;
-      font-weight: 600; }
+      font-weight: 700; }
     .resume .experience .startEnd {
       display: block; }
       .resume .experience .startEnd p {
         display: inline-block;
-        font-size: 3.5vw;
+        font-size: 3vw;
         margin: 0;
         text-transform: uppercase; }
     .resume .experience .expHidden {
@@ -801,8 +826,9 @@
     .resume .experience ul {
       padding-left: 5vw; }
       .resume .experience ul li {
-        font-size: 3.75vw;
-        letter-spacing: 0.25vw; }
+        font-size: 3vw;
+        letter-spacing: 0.5vw;
+        font-weight: 200; }
 
 #aboutImage {
   background-image: url(../img/backgrounds/snow.jpg);
