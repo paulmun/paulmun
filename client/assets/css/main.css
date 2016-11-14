@@ -350,7 +350,7 @@
 
 #aboutMe {
   height: 100vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-image: url(../img/backgrounds/water.jpg);
   background-position: 48% center;
   background-size: cover;
@@ -514,18 +514,20 @@
     width: 26vw;
     border: 0.5vw solid #EDCB67; }
 
-  #aboutMe #aboutMeTop {
-    margin: 25vh auto 0; }
-    #aboutMe #aboutMeTop h2 {
-      font-size: 3.75vw; }
-    #aboutMe #aboutMeTop p {
-      font-size: 1.7vw;
-      width: 75%; }
-  #aboutMe #meNavi a {
-    padding: 1.3vw 0;
-    width: 19vw;
-    font-size: 2.5vw;
-    border: 0.5vw solid white; }
+  #aboutMe {
+    background-attachment: fixed; }
+    #aboutMe #aboutMeTop {
+      margin: 25vh auto 0; }
+      #aboutMe #aboutMeTop h2 {
+        font-size: 3.75vw; }
+      #aboutMe #aboutMeTop p {
+        font-size: 1.7vw;
+        width: 75%; }
+    #aboutMe #meNavi a {
+      padding: 1.3vw 0;
+      width: 19vw;
+      font-size: 2.5vw;
+      border: 0.5vw solid white; }
 
   #indexContact {
     font-size: 7vw; } }
