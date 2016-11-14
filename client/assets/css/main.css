@@ -291,7 +291,7 @@
   background-image: url(../img/backgrounds/chicken.jpg);
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
   width: 100vw;
   display: block;
@@ -496,12 +496,14 @@
   #aboutMe .buttons {
     font-size: 4vw; } }
 @media only screen and (min-width: 955px) {
-  #introduction .darkener h2 {
-    font-size: 2.5vw;
-    letter-spacing: 0.75vw;
-    width: 25vw; }
-  #introduction .darkener p {
-    font-size: 1.25vw; }
+  #introduction {
+    background-attachment: fixed; }
+    #introduction .darkener h2 {
+      font-size: 2.5vw;
+      letter-spacing: 0.75vw;
+      width: 25vw; }
+    #introduction .darkener p {
+      font-size: 1.25vw; }
 
   #portfolioLink p {
     font-size: 1.75vw;
