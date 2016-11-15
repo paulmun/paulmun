@@ -1,33 +1,38 @@
-app.controller('mainController', ['$scope', '$location', '$rootScope', function($scope, $location, $rootScope){
+(function(){
 
-	$scope.showMenu = true;
-	$scope.menuClass = 'mobileMenu';
-	$scope.headerClass = 'header';
+	angular.module('main').controller('mainController', mainController);
 
-	$rootScope.$on("$routeChangeStart", function(){
-		$scope.logoClass = 'logo';
-		$scope.menuClass = 'mobileMenu';
+	function mainController($scope, $location, $rootScope){
+
 		$scope.showMenu = true;
+		$scope.menuClass = 'mobileMenu';
 		$scope.headerClass = 'header';
-	});
 
-	$scope.menuExpand = function(){
-		if($scope.showMenu == true){
-			$scope.logoClass = 'logo2';
-			$scope.menuClass = 'mobileMenu2';
-			$scope.showMenu = false;
-			$scope.headerClass = 'altHeader';
-		}
-		else if($scope.showMenu == false){
+		$rootScope.$on("$routeChangeStart", function(){
 			$scope.logoClass = 'logo';
 			$scope.menuClass = 'mobileMenu';
 			$scope.showMenu = true;
 			$scope.headerClass = 'header';
+		});
+
+		$scope.menuExpand = function(){
+			if($scope.showMenu == true){
+				$scope.logoClass = 'logo2';
+				$scope.menuClass = 'mobileMenu2';
+				$scope.showMenu = false;
+				$scope.headerClass = 'altHeader';
+			}
+			else if($scope.showMenu == false){
+				$scope.logoClass = 'logo';
+				$scope.menuClass = 'mobileMenu';
+				$scope.showMenu = true;
+				$scope.headerClass = 'header';
+			}
 		}
-	}
 
-	$scope.log = function (snapIndex) {
-        console.log('just snapped to', snapIndex);
-    };
+		$scope.log = function (snapIndex) {
+	        console.log('just snapped to', snapIndex);
+	    };
 
-}]);
+	};
+})();

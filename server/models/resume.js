@@ -1,37 +1,41 @@
-var mongoose = require('mongoose'),
-	Schema = mongoose.Schema;
+(function(){
 
-var ResumeSchema = new Schema({
-	employer: {
-		type: String,
-		required: [true, 'Enter an Employer'],
-		trim: true
-	},
+	var mongoose = require('mongoose'),
+		Schema = mongoose.Schema;
 
-	position: {
-		type: String,
-		required: [true, 'Enter a Position'],
-		trime: true
-	},
+	var ResumeSchema = new Schema({
+		employer: {
+			type: String,
+			required: [true, 'Enter an Employer'],
+			trim: true
+		},
 
-	start: {
-		type: String,
-		required: [true, 'Enter a Start Date'],
-		trim: true
-	},
+		position: {
+			type: String,
+			required: [true, 'Enter a Position'],
+			trime: true
+		},
 
-	end:{
-		type: String,
-		default: "Present"
-	},
+		start: {
+			type: String,
+			required: [true, 'Enter a Start Date'],
+			trim: true
+		},
 
-	user:{
-		type: Schema.Types.ObjectId,
-		ref: 'User'
-	},
+		end:{
+			type: String,
+			default: "Present"
+		},
 
-	experiences: Array
-});
+		user:{
+			type: Schema.Types.ObjectId,
+			ref: 'User'
+		},
+
+		experiences: Array
+	});
 
 
-var Resume = mongoose.model('Resume', ResumeSchema);
+	mongoose.model('Resume', ResumeSchema);
+
+})();
