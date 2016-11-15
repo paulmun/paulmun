@@ -972,10 +972,10 @@
       color: white;
       display: block;
       font-family: "Utopia";
-      font-size: 8vw;
+      font-size: 7vw;
       font-weight: 400;
       margin: 41vh auto 0;
-      padding: 2vw;
+      padding: 1.5vw;
       text-align: center;
       width: 60vw; }
     #portfolio .portfolioIntro .darkener p {
@@ -985,7 +985,7 @@
       letter-spacing: 0.6vw;
       text-align: center;
       text-transform: uppercase;
-      font-size: 4vw; }
+      font-size: 3.5vw; }
   #portfolio .projects {
     box-shadow: 0vh 0vh 1vh 1vh rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -1001,10 +1001,10 @@
       margin: 0 auto; }
       #portfolio .project .projectContent .projectContentTop {
         margin: 3vw auto 3vw;
-        padding: 1vw 3vw 0;
+        padding: 1vw 7vw 0;
         display: block; }
         #portfolio .project .projectContent .projectContentTop .titleLink {
-          width: 20vw;
+          width: 100%;
           text-decoration: none;
           color: black;
           display: block;
@@ -1019,66 +1019,63 @@
         #portfolio .project .projectContent .projectContentTop p {
           font-family: 'Gotham';
           font-weight: 200;
-          margin: 0.75vw auto; }
+          margin: 5vw auto; }
+      #portfolio .project .projectContent img {
+        width: 85%;
+        display: block;
+        margin: 0 auto 7vw; }
+
+@media only screen and (min-width: 550px) {
+  #portfolio .portfolioIntro .darkener h2 {
+    font-size: 6vw;
+    padding: 1vw;
+    width: 50vw; }
+  #portfolio .portfolioIntro .darkener p {
+    font-size: 3vw; } }
+@media only screen and (min-width: 768px) {
+  #portfolio .portfolioIntro .darkener h2 {
+    font-size: 4.5vw;
+    padding: 1vw;
+    width: 40vw; }
+  #portfolio .portfolioIntro .darkener p {
+    font-size: 1.75vw; }
+  #portfolio .project .projectContent .projectContentTop .titleLink h2 #sinasoid {
+    width: 40%;
+    margin: 0; } }
+@media only screen and (min-width: 955px) {
+  #portfolio .portfolioIntro .darkener h2 {
+    font-size: 2vw;
+    margin: 41vh auto 0;
+    padding: 0.5vw;
+    width: 19vw; }
+  #portfolio .portfolioIntro .darkener p {
+    letter-spacing: 0.3vw;
+    font-size: 1vw; }
+  #portfolio .project {
+    margin: 5vw auto;
+    width: 79vw; }
+    #portfolio .project .projectContent {
+      width: 72vw;
+      display: block;
+      margin: 0 auto; }
+      #portfolio .project .projectContent .projectContentTop {
+        margin: 3vw auto 3vw;
+        padding: 1vw 3vw 0; }
+        #portfolio .project .projectContent .projectContentTop .titleLink {
+          width: 20vw;
+          margin-bottom: 2vw; }
+          #portfolio .project .projectContent .projectContentTop .titleLink h2 {
+            font-size: 1.5vw;
+            width: 100%; }
+            #portfolio .project .projectContent .projectContentTop .titleLink h2 #sinasoid {
+              width: 100%; }
+        #portfolio .project .projectContent .projectContentTop p {
+          margin: 0.75vw auto;
+          font-size: 1.3vw; }
       #portfolio .project .projectContent img {
         width: 65%;
         display: block;
-        margin: 0 auto 2vw; }
-
-@media only screen and (min-width: 955px) {
-  #portfolio {
-    background-color: lightgrey;
-    overflow: hidden; }
-    #portfolio .portfolioIntro {
-      background-attachment: fixed;
-      background-image: url("../img/backgrounds/sunrise.jpg");
-      background-size: cover;
-      height: 100vh;
-      overflow: hidden; }
-      #portfolio .portfolioIntro .darkener h2 {
-        background-color: lightgrey;
-        color: white;
-        display: block;
-        font-family: "Utopia";
-        font-size: 2vw;
-        font-weight: 400;
-        margin: 41vh auto 0;
-        padding: 0.5vw;
-        text-align: center;
-        width: 19vw; }
-      #portfolio .portfolioIntro .darkener p {
-        color: white;
-        font-family: "gotham";
-        font-weight: 200;
-        letter-spacing: 0.3vw;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1vw; }
-    #portfolio .project {
-      margin: 5vw auto;
-      width: 79vw; }
-      #portfolio .project .projectContent {
-        width: 72vw;
-        display: block;
-        margin: 0 auto; }
-        #portfolio .project .projectContent .projectContentTop {
-          margin: 3vw auto 3vw;
-          padding: 1vw 3vw 0; }
-          #portfolio .project .projectContent .projectContentTop .titleLink {
-            width: 20vw;
-            margin-bottom: 2vw; }
-            #portfolio .project .projectContent .projectContentTop .titleLink h2 {
-              font-size: 1.5vw;
-              width: 100%; }
-              #portfolio .project .projectContent .projectContentTop .titleLink h2 #sinasoid {
-                width: 100%; }
-          #portfolio .project .projectContent .projectContentTop p {
-            margin: 0.75vw auto;
-            font-size: 1.3vw; }
-        #portfolio .project .projectContent img {
-          width: 65%;
-          display: block;
-          margin: 0 auto 2vw; } }
+        margin: 0 auto 2vw; } }
 @font-face {
   font-family: 'Utopia';
   font-style: normal;
