@@ -103,9 +103,10 @@
       border-bottom: 1vw solid lightgrey;
       color: black;
       font-family: "Utopia";
-      font-size: 7.5vw;
-      font-weight: 600;
+      font-size: 6.5vw;
+      font-weight: normal;
       line-height: 16vw;
+      letter-spacing: 0.25vw;
       padding-bottom: 0.8vw;
       text-decoration: none;
       text-transform: uppercase; }
@@ -396,7 +397,7 @@
       margin: 0 1vw 3vw;
       vertical-align: top;
       width: 39vw;
-      letter-spacing: 0.5vw;
+      letter-spacing: 0.8vw;
       text-decoration: none;
       font-weight: normal; }
     #aboutMe #meNavi a:nth-child(1) {
@@ -757,79 +758,118 @@
 
 .resume {
   text-align: left;
-  padding: 5vw;
   font-family: 'Gotham';
-  margin: 17vw 0.5vw;
-  background-color: white; }
-  .resume .resumeTitle {
-    border-bottom: 0.5vw solid lightgrey;
-    font-family: 'Utopia';
-    font-size: 5.5vw;
-    letter-spacing: 0.5vw;
-    margin: 4vw auto 8vw;
-    padding-bottom: 1vw;
-    text-align: center;
-    text-transform: uppercase;
-    width: 85%; }
-  .resume .experience {
-    margin-bottom: 5vh;
-    overflow: hidden; }
-    .resume .experience .expTop {
-      overflow: hidden; }
-      .resume .experience .expTop .expTopLeft {
-        float: left;
-        width: 75vw; }
-      .resume .experience .expTop .collapser {
-        width: 6vw;
-        height: 4vw;
-        float: right;
-        margin-top: 3vw; }
-        .resume .experience .expTop .collapser span {
-          background-color: black;
-          content: "";
-          display: block;
-          height: 1.25vw;
-          position: absolute;
-          width: 6vw; }
-        .resume .experience .expTop .collapser .plus {
-          transform: rotate(90deg);
-          transition: all linear 200ms; }
-        .resume .experience .expTop .collapser .minus {
-          transition: all linear 200ms; }
-    .resume .experience h2 {
+  height: 100vh;
+  margin: 0;
+  overflow: scroll;
+  background-image: url("../img/backgrounds/barrels.jpg");
+  background-position: center center;
+  background-size: cover; }
+  .resume .darkener {
+    padding: 0 5vw 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 90vw;
+    overflow: scroll; }
+    .resume .darkener .resumeTitle, .resume .darkener .skillsTitle {
+      border-bottom: 0.5vw solid lightgrey;
+      color: white;
       font-family: 'Utopia';
-      margin: 0;
-      font-size: 4.25vw;
-      letter-spacing: 0.25vw;
-      font-weight: normal; }
-    .resume .experience .position {
-      font-size: 3vw;
-      text-transform: uppercase;
+      font-size: 5.5vw;
       letter-spacing: 0.5vw;
-      margin: 0;
-      font-weight: 700; }
-    .resume .experience .startEnd {
-      display: block; }
-      .resume .experience .startEnd p {
-        display: inline-block;
-        font-size: 3vw;
+      padding-bottom: 1vw;
+      text-align: center;
+      text-transform: uppercase;
+      width: 85%; }
+    .resume .darkener .resumeTitle {
+      margin: 25vw auto 15vw; }
+    .resume .darkener .skillsTitle {
+      margin: 15vw auto; }
+    .resume .darkener .experience {
+      margin-bottom: 5vh;
+      overflow: hidden;
+      color: white; }
+      .resume .darkener .experience .expTop {
+        overflow: hidden; }
+        .resume .darkener .experience .expTop .expTopLeft {
+          float: left;
+          width: 75vw; }
+        .resume .darkener .experience .expTop .collapser {
+          float: right; }
+          .resume .darkener .experience .expTop .collapser a {
+            display: block;
+            height: 3.5vw;
+            padding-top: 3.5vw;
+            width: 6vw; }
+            .resume .darkener .experience .expTop .collapser a span {
+              background-color: white;
+              content: "";
+              display: block;
+              height: 1.25vw;
+              position: absolute;
+              width: 6vw; }
+          .resume .darkener .experience .expTop .collapser .plus {
+            transform: rotate(90deg);
+            transition: all linear 200ms; }
+          .resume .darkener .experience .expTop .collapser .minus {
+            transition: all linear 200ms; }
+      .resume .darkener .experience h2 {
+        font-family: 'Utopia';
         margin: 0;
-        text-transform: uppercase; }
-    .resume .experience .expHidden {
-      display: none;
-      opacity: 0;
-      transition: all linear 200ms; }
-    .resume .experience .expShown {
-      display: block;
-      transition: all linear 200ms;
-      opacity: 1; }
-    .resume .experience ul {
-      padding-left: 5vw; }
-      .resume .experience ul li {
+        color: white;
+        font-size: 4.25vw;
+        letter-spacing: 0.25vw;
+        font-weight: normal; }
+      .resume .darkener .experience .position {
         font-size: 3vw;
+        text-transform: uppercase;
         letter-spacing: 0.5vw;
-        font-weight: 200; }
+        margin: 0;
+        font-weight: 700; }
+      .resume .darkener .experience .startEnd {
+        display: block; }
+        .resume .darkener .experience .startEnd p {
+          display: inline-block;
+          font-size: 3vw;
+          margin: 0;
+          text-transform: uppercase; }
+      .resume .darkener .experience .expHidden {
+        display: none;
+        opacity: 0;
+        transition: all linear 200ms; }
+      .resume .darkener .experience .expShown {
+        display: block;
+        transition: all linear 200ms;
+        opacity: 1; }
+      .resume .darkener .experience ul {
+        padding-left: 4vw; }
+        .resume .darkener .experience ul li {
+          font-size: 3vw;
+          letter-spacing: 0.25vw;
+          font-weight: 200; }
 
+@media only screen and (min-width: 955px) {
+  .resume .resumeTitle {
+    border-bottom: 0.4vw solid lightgrey;
+    font-size: 3.5vw;
+    letter-spacing: 0.75vw;
+    width: 75%; }
+  .resume .experience ul li {
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw; }
+  .resume .experience h2 {
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw; }
+  .resume .experience .collapser {
+    display: none; }
+  .resume .experience .position {
+    font-size: 1.5vw; }
+  .resume .experience .expHidden {
+    display: block;
+    opacity: 1; }
+  .resume .experience .startEnd p {
+    margin-top: 0.25vw;
+    font-size: 1.5vw; } }
 #aboutImage {
   background-image: url(../img/backgrounds/snow.jpg);
   background-position: center center;

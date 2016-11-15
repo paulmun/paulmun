@@ -5,9 +5,13 @@ app.controller('resumeController', ['$scope', '$location', 'resumeFactory', func
 		'expHidden',
 		'expHidden',
 		'expHidden',
+		'expHidden',
+		'expHidden',
 		'expHidden'
 	];
 	$scope.plusMinus = [
+		'plus',
+		'plus',
 		'plus',
 		'plus',
 		'plus',

@@ -9,7 +9,7 @@ app.controller('mainController', ['$scope', '$location', '$rootScope', function(
 		$scope.menuClass = 'mobileMenu';
 		$scope.showMenu = true;
 		$scope.headerClass = 'header';
-	})
+	});
 
 	$scope.menuExpand = function(){
 		if($scope.showMenu == true){
