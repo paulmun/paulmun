@@ -197,23 +197,23 @@
 
   #menuShow ul li a {
     border-bottom: .75vw solid lightgrey;
-    font-size: 5vw; }
+    font-size: 3.5vw; }
   #menuShow #social li a img {
     width: 7vw; } }
 @media only screen and (min-width: 955px) {
   .header, .altHeader {
+    background-color: transparent;
     padding: 1.5vw;
     width: 97vw;
-    height: none;
-    overflow: hidden;
-    background: transparent; }
+    height: 8.5vw;
+    overflow: hidden; }
     .header svg, .altHeader svg {
       width: 7vw; }
     .header .logo, .header .logo2, .altHeader .logo, .altHeader .logo2 {
       stroke: #ffffff; }
     .header #headerText, .altHeader #headerText {
       color: white;
-      height: 6vw;
+      height: 5.5vw;
       margin-left: 0.25vw; }
       .header #headerText #name, .altHeader #headerText #name {
         font-size: 1.75vw; }
@@ -235,8 +235,12 @@
         font-weight: 600;
         font-size: 2vw; }
 
+  .darkHeader {
+    background-color: rgba(0, 0, 0, 0.25); }
+
   #menuShow {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
     padding-top: 8vw;
     height: none; }
     #menuShow ul {
@@ -252,17 +256,19 @@
     #menuShow #social {
       display: none; } }
 @media only screen and (min-width: 1450px) {
-  .header svg, .altHeader svg {
-    width: 6vw; }
-  .header #headerText, .altHeader #headerText {
-    height: 5vw; }
-    .header #headerText #name, .altHeader #headerText #name {
+  .header, .altHeader {
+    height: 6.5vw; }
+    .header svg, .altHeader svg {
+      width: 6vw; }
+    .header #headerText, .altHeader #headerText {
+      height: 5vw; }
+      .header #headerText #name, .altHeader #headerText #name {
+        font-size: 1.5vw; }
+      .header #headerText p, .altHeader #headerText p {
+        font-size: 1.1vw;
+        line-height: 1.25vw; }
+    .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
       font-size: 1.5vw; }
-    .header #headerText p, .altHeader #headerText p {
-      font-size: 1.1vw;
-      line-height: 1.25vw; }
-  .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
-    font-size: 1.5vw; }
 
   #menuShow ul {
     margin-top: 0.5vw; }
@@ -283,13 +289,11 @@
   .header #menu #largeScreenMenu, .altHeader #menu #largeScreenMenu {
     font-size: 1.25vw; }
 
-  #menuShow ul {
-    margin-top: -0.5vw; }
-    #menuShow ul li a {
-      font-size: 1vw;
-      line-height: 3vw;
-      padding-bottom: 0.2vw;
-      border-bottom: 0.15vw solid lightgrey; } }
+  #menuShow ul li a {
+    font-size: 1vw;
+    line-height: 3vw;
+    padding-bottom: 0.2vw;
+    border-bottom: 0.15vw solid lightgrey; } }
 #introduction {
   background-image: url(../img/backgrounds/chicken.jpg);
   background-position: center center;
@@ -830,6 +834,7 @@
         display: block; }
         .resume .darkener .experience .startEnd p {
           display: inline-block;
+          font-weight: 200;
           font-size: 3vw;
           margin: 0;
           text-transform: uppercase; }
@@ -844,32 +849,79 @@
       .resume .darkener .experience ul {
         padding-left: 4vw; }
         .resume .darkener .experience ul li {
+          list-style: outside none circle;
           font-size: 3vw;
           letter-spacing: 0.25vw;
           font-weight: 200; }
 
-@media only screen and (min-width: 955px) {
-  .resume .resumeTitle {
-    border-bottom: 0.4vw solid lightgrey;
-    font-size: 3.5vw;
-    letter-spacing: 0.75vw;
-    width: 75%; }
-  .resume .experience ul li {
-    font-size: 1.5vw;
-    letter-spacing: 0.2vw; }
-  .resume .experience h2 {
-    font-size: 2.5vw;
-    letter-spacing: 0.2vw; }
-  .resume .experience .collapser {
-    display: none; }
-  .resume .experience .position {
-    font-size: 1.5vw; }
-  .resume .experience .expHidden {
+@media only screen and (min-width: 550px) {
+  .resume .darkener .resumeTitle, .resume .darkener .skillsTitle {
+    font-size: 5vw; }
+  .resume .darkener .skillsTitle {
+    margin: 10vw auto; }
+  .resume .darkener .experience .startEnd p {
+    font-size: 2.75vw; }
+  .resume .darkener .experience h2 {
+    font-size: 3.75vw; }
+  .resume .darkener .experience p {
+    font-size: 2.5vw; } }
+@media only screen and (min-width: 768px) {
+  .resume .darkener .resumeTitle, .resume .darkener .skillsTitle {
+    font-size: 4vw;
+    width: 75%;
+    margin: 20vw auto 5vw; }
+  .resume .darkener .resumeTitle {
+    margin: 15vw auto 5vw; }
+  .resume .darkener .skillsTitle {
+    margin: 5vw auto 10vw; }
+  .resume .darkener .experience .expHidden {
     display: block;
     opacity: 1; }
-  .resume .experience .startEnd p {
+  .resume .darkener .experience p {
+    font-size: 2vw;
+    letter-spacing: 0.2vw; }
+  .resume .darkener .experience h2 {
+    font-size: 3vw; }
+  .resume .darkener .experience .startEnd p {
+    font-size: 2vw; }
+  .resume .darkener .experience .position {
+    font-size: 2.2vw; }
+  .resume .darkener .experience .collapser {
+    display: none; } }
+@media only screen and (min-width: 955px) {
+  .resume .darkener .resumeTitle, .resume .darkener .skillsTitle {
+    border-bottom: 0.4vw solid lightgrey;
+    font-size: 3.5vw;
+    letter-spacing: 0.75vw; }
+  .resume .darkener .skillsTitle {
+    margin: 5vw auto 7vw; }
+  .resume .darkener .experience h2 {
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw; }
+  .resume .darkener .experience .position {
+    font-size: 1.6vw; }
+  .resume .darkener .experience .startEnd p {
     margin-top: 0.25vw;
     font-size: 1.5vw; } }
+@media only screen and (min-width: 1450px) {
+  .resume .darkener .resumeTitle, .resume .darkener .skillsTitle {
+    border-bottom: 0.3vw solid lightgrey;
+    font-size: 2.75vw;
+    width: 70%; }
+  .resume .darkener .resumeTitle {
+    margin: 10vw auto 5vw; }
+  .resume .darkener .experience {
+    margin-bottom: 5vw; }
+    .resume .darkener .experience h2 {
+      font-size: 2vw; }
+    .resume .darkener .experience .position {
+      font-size: 1.25vw; }
+    .resume .darkener .experience .startEnd p {
+      font-size: 1.25vw; }
+    .resume .darkener .experience ul {
+      margin-top: 2vw; }
+      .resume .darkener .experience ul li p {
+        font-size: 1.2vw; } }
 #aboutImage {
   background-image: url(../img/backgrounds/snow.jpg);
   background-position: center center;

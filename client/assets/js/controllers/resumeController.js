@@ -18,6 +18,8 @@ app.controller('resumeController', ['$scope', '$location', 'resumeFactory', func
 		'plus'
 	];
 
+	$scope.darkHeader = 'darkHeader'
+
 	resumeFactory.all(function(data){
 		if(data.errors){
 			$scope.errors = data.errors;
