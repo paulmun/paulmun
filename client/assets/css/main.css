@@ -339,6 +339,9 @@
     #introduction .darkener #links img {
       margin: 0 3vw;
       width: 8.5vw; }
+  #introduction .darkener #email a {
+    text-decoration: none;
+    color: white; }
 
 #portfolioLink {
   height: 55vw;
@@ -969,7 +972,7 @@
   background-color: lightgrey;
   overflow: hidden; }
   #portfolio .portfolioIntro {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-image: url("../img/backgrounds/sunrise.jpg");
     background-size: cover;
     height: 100vh;

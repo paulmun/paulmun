@@ -7,6 +7,7 @@
 		$scope.showMenu = true;
 		$scope.menuClass = 'mobileMenu';
 		$scope.headerClass = 'header';
+		$scope.email = true;
 
 		$rootScope.$on("$routeChangeStart", function(){
 			$scope.logoClass = 'logo';
@@ -30,9 +31,9 @@
 			}
 		}
 
-		$scope.log = function (snapIndex) {
-	        console.log('just snapped to', snapIndex);
-	    };
+		$scope.displayEmail = function(){
+			$scope.email = false;
+		}
 
 	};
 })();
