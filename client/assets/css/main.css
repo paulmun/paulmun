@@ -233,7 +233,7 @@
         color: white;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 2vw; }
+        font-size: 1.8vw; }
 
   .darkHeader {
     background-color: rgba(0, 0, 0, 0.25); }
@@ -320,6 +320,11 @@
   #introduction .darkener p {
     margin: 0;
     font-size: 3vw; }
+  #introduction .darkener #links {
+    margin-top: 9vw; }
+    #introduction .darkener #links img {
+      margin: 0 3vw;
+      width: 8.5vw; }
 
 #portfolioLink {
   height: 55vw;
@@ -334,7 +339,7 @@
   font-size: 3.5vw;
   color: black; }
   #portfolioLink p {
-    margin: 8vw auto;
+    margin: 11vw auto 4vw;
     width: 80%;
     font-weight: 200;
     font-size: 3.25vw;
@@ -349,12 +354,12 @@
     font-size: 6vw;
     font-weight: 400;
     letter-spacing: 0.8vw;
-    margin: 1vh auto 0;
+    margin: 3vh auto 0;
     text-transform: uppercase;
-    width: 60vw;
+    width: 37.5vw;
     border-radius: 0;
     font-family: 'Utopia';
-    padding: 3vw; }
+    padding: 2vw 5vw; }
 
 #aboutMe {
   height: 100vh;
@@ -366,8 +371,8 @@
   text-align: center; }
   #aboutMe #aboutMeTop {
     padding: 5vw;
-    margin: 25vh auto 5vh;
-    width: 80%;
+    margin: 32vh auto 0;
+    width: 87%;
     display: block; }
     #aboutMe #aboutMeTop h2 {
       font-family: 'Gotham';
@@ -395,12 +400,13 @@
     margin: 0 auto;
     width: 85vw; }
     #aboutMe #meNavi a {
+      font-size: 5.5vw;
       font-family: 'Utopia';
       display: inline-block;
-      padding: 3vw 0;
+      padding: 2vw 5vw;
       margin: 0 1vw 3vw;
       vertical-align: top;
-      width: 39vw;
+      width: 27vw;
       letter-spacing: 0.8vw;
       text-decoration: none;
       font-weight: normal; }
@@ -415,7 +421,6 @@
 .buttons {
   width: 50vw;
   border: 0.75vw solid white;
-  font-size: 6vw;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .8vw;
@@ -438,22 +443,7 @@
   background-color: white; }
 
 #indexContact {
-  background-color: #bfbfbf;
-  box-shadow: 0 -0.5vh 1vh 0 rgba(0, 0, 0, 0.55);
-  overflow: hidden;
-  text-align: center;
-  width: 100vw;
-  padding: 10vw 0;
-  border: none;
-  font-size: 8vw;
-  letter-spacing: 1vh;
-  font-family: 'Gotham';
-  text-decoration: none;
-  box-shadow: none; }
-  #indexContact p {
-    color: white;
-    font-size: 3.5vw;
-    letter-spacing: 0.75vw; }
+  display: none; }
 
 @media only screen and (min-width: 550px) {
   #introduction .darkener h2 {
@@ -477,10 +467,7 @@
   #aboutMe #meNavi a {
     padding: 3vw 0;
     width: 34vw;
-    font-size: 5vw; }
-
-  #indexContact {
-    font-size: 9vw; } }
+    font-size: 5vw; } }
 @media only screen and (min-width: 768px) {
   #introduction .darkener h2 {
     font-size: 5vw;
@@ -509,53 +496,52 @@
     padding: 2vw 0;
     width: 30vw; }
   #aboutMe .buttons {
-    font-size: 4vw; }
-
-  #indexContact {
-    font-size: 7vw; }
-    #indexContact p {
-      font-size: 2.75vw; } }
+    font-size: 4vw; } }
 @media only screen and (min-width: 955px) {
   #introduction {
     background-attachment: fixed; }
     #introduction .darkener h2 {
       font-size: 2.5vw;
-      letter-spacing: 0.75vw;
-      width: 25vw; }
+      letter-spacing: 0.7vw;
+      width: 25vw;
+      padding: 1vw; }
     #introduction .darkener p {
-      font-size: 1.25vw; }
+      font-size: 1.1vw;
+      letter-spacing: 0.7vw; }
+    #introduction .darkener #links {
+      margin-top: 2vw; }
+      #introduction .darkener #links img {
+        width: 2.5vw;
+        margin: 0 0.75vw; }
 
   #portfolioLink {
-    height: 40vw; }
+    height: 30vw; }
     #portfolioLink p {
-      font-size: 1.75vw;
-      width: 59%;
-      letter-spacing: 0.25vw; }
+      font-size: 1.2vw;
+      width: 40%;
+      letter-spacing: 0.25vw;
+      margin: 8vw auto 4vw; }
     #portfolioLink a {
       font-size: 2.5vw;
-      width: 26vw;
-      border: 0.5vw solid #EDCB67; }
+      width: 19.5vw;
+      border: 0.4vw solid #EDCB67;
+      padding: 1vw 3vw; }
 
   #aboutMe {
     background-attachment: fixed; }
     #aboutMe #aboutMeTop {
-      margin: 25vh auto 0; }
+      margin: 30vh auto 0; }
       #aboutMe #aboutMeTop h2 {
-        font-size: 3.75vw; }
+        font-size: 3vw; }
       #aboutMe #aboutMeTop p {
-        font-size: 1.7vw;
-        width: 75%; }
+        font-size: 1.2vw;
+        width: 63%;
+        margin: 3vw auto 0; }
     #aboutMe #meNavi a {
-      padding: 1.3vw 0;
-      width: 19vw;
+      padding: 1vw 3vw;
+      width: 13.5vw;
       font-size: 2.5vw;
-      border: 0.5vw solid white; }
-
-  #indexContact {
-    font-size: 6vw;
-    padding: 9vw 0; }
-    #indexContact p {
-      font-size: 2vw; } }
+      border: 0.4vw solid white; } }
 @media only screen and (min-width: 1450px) {
   #introduction .darkener h2 {
     font-size: 2vw;
@@ -593,14 +579,7 @@
     letter-spacing: 0.75vw;
     padding: 1vw 0;
     width: 15vw;
-    border: 0.25vw solid #fff; }
-
-  #indexContact {
-    font-size: 5.5vw;
-    padding: 8vw 0; }
-    #indexContact p {
-      font-size: 1.25vw;
-      letter-spacing: 0.5vw; } }
+    border: 0.25vw solid #fff; } }
 @media only screen and (min-width: 1650px) {
   #introduction .darkener h2 {
     font-size: 1.75vw;
@@ -611,14 +590,7 @@
     letter-spacing: 0.6vw; }
 
   #aboutMe #aboutMeTop {
-    margin: 15vw auto 0; }
-
-  #indexContact {
-    font-size: 4.5vw;
-    padding: 6.75vw 0; }
-    #indexContact p {
-      font-size: 1.1vw;
-      letter-spacing: 0.3vw; } }
+    margin: 15vw auto 0; } }
 #contactForm {
   text-align: center;
   width: 100%;
