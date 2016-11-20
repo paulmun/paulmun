@@ -638,8 +638,8 @@
 @media only screen and (min-width: 1650px) {
   #introduction .darkener h2 {
     font-size: 1.75vw;
-    padding: 0.75vw;
-    width: 18vw; }
+    padding: 1vw 4w;
+    width: 13.3vw; }
   #introduction .darkener p {
     font-size: 0.8vw;
     letter-spacing: 0.6vw; }
@@ -1134,6 +1134,9 @@
 body {
   margin: 0;
   background-color: #FFF; }
+
+h2 {
+  white-space: nowrap; }
 
 #scroller {
   position: absolute;
