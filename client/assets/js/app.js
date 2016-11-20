@@ -10,17 +10,17 @@
 		.when('/contact', {
 			templateUrl: 'partials/contact.html'
 		})
-		.when('/admin', {
-			templateUrl: 'partials/admin.html',
-			controller: 'adminController'
-		})
+		// .when('/admin', {
+		// 	templateUrl: 'partials/admin.html',
+		// 	controller: 'adminController'
+		// })
 		.when('/resume', {
 			templateUrl: 'partials/resume.html',
 			controller: 'resumeController'
 		})
-		.when('/about', {
-			templateUrl: 'partials/about.html'
-		})
+		// .when('/about', {
+		// 	templateUrl: 'partials/about.html'
+		// })
 		.when('/portfolio', {
 			templateUrl: 'partials/portfolio.html'
 		})

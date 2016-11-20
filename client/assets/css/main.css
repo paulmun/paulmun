@@ -339,9 +339,11 @@
     #introduction .darkener #links img {
       margin: 0 3vw;
       width: 8.5vw; }
-  #introduction .darkener #email a {
-    text-decoration: none;
-    color: white; }
+  #introduction .darkener #email {
+    margin-top: 5vw; }
+    #introduction .darkener #email a {
+      text-decoration: none;
+      color: white; }
 
 #portfolioLink {
   height: 55vw;
@@ -475,6 +477,11 @@
     margin-top: 5vw; }
     #introduction .darkener #links img {
       width: 6.5vw; }
+  #introduction .darkener #email {
+    margin-top: 3.5vw; }
+    #introduction .darkener #email a {
+      letter-spacing: 0.6vw;
+      font-size: 1.5vw; }
 
   #portfolioLink {
     height: 47vw; }
@@ -551,6 +558,11 @@
       #introduction .darkener #links img {
         width: 2.5vw;
         margin: 0 0.75vw; }
+    #introduction .darkener #email {
+      margin-top: 2vw; }
+      #introduction .darkener #email a {
+        font-size: 1.25vw;
+        letter-spacing: 0.5vw; }
 
   #portfolioLink {
     height: 30vw; }
@@ -588,6 +600,11 @@
   #introduction .darkener p {
     font-size: 1vw;
     letter-spacing: 0.65vw; }
+  #introduction .darkener #email {
+    margin-top: 2vw; }
+    #introduction .darkener #email a {
+      font-size: 1.2vw;
+      letter-spacing: 0.4vw; }
 
   #portfolioLink {
     height: 21vw; }
@@ -626,6 +643,9 @@
   #introduction .darkener p {
     font-size: 0.8vw;
     letter-spacing: 0.6vw; }
+  #introduction .darkener #email a {
+    font-size: 1vw;
+    letter-spacing: 0.4vw; }
 
   #aboutMe #aboutMeTop {
     margin: 15vw auto 0; } }

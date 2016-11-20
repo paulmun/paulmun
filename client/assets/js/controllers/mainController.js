@@ -32,7 +32,7 @@
 		}
 
 		$scope.displayEmail = function(){
-			$scope.email = false;
+			$scope.email = !$scope.email;
 		}
 
 	};
