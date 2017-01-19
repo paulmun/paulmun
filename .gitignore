@@ -4,3 +4,7 @@ paulsite.sublime-workspace
 paulsitecss.sublime-workspace
 bower_components
 node_modules
+.DS_Store
+client/.DS_Store
+Client/assets/.DS_Store
+server/.DS_Store
